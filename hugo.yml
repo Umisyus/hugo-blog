@@ -1,0 +1,34 @@
+baseURL: http://example.org/
+languageCode: tr
+title: My Portfolio
+theme: "PaperMod"
+
+# params:
+#     homeInfoParams:
+#         Title: Hi there 👋
+#         Content: Can be Info, links, about...
+params:
+    profileMode:
+        enabled: true
+        title: "" # optional default will be site title
+        subtitle: "This is me"
+        imageUrl: "me.jpg" # optional
+
+        imageTitle: "title of image" # optional
+        imageWidth: 250 # custom size
+        imageHeight: 250 # custom size
+        buttons:
+          # Posts
+          - name: Current Posts
+            url: "/current-posts"
+          - name: Archived Posts
+            url: "/archived-posts"
+          - name: Github
+            url: "https://github.com/"
+          - name: Search
+            url: "/search"
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
